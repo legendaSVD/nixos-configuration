@@ -1,0 +1,46 @@
+[config]
+reload_apps = false
+
+[templates.quickshell]
+input_path = "~/.config/hypr/scripts/quickshell/colors.json.template"
+output_path = "/tmp/qs_colors.json"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty-colors.conf.template"
+output_path = "/tmp/kitty-matugen-colors.conf"
+
+[templates.discord]
+input_path = "~/.config/matugen/templates/discord.css.template"
+output_path = "~/.config/vesktop/themes/matugen.theme.css"
+
+[templates.firefox]
+input_path = "~/.config/matugen/templates/firefox.css"
+output_path = "~/.mozilla/firefox/zawmoi9h.default/chrome/matugen.css"
+
+[templates.web_github]
+input_path = "~/.config/matugen/templates/websites/github.css.template"
+output_path = "~/.mozilla/firefox/zawmoi9h.default/chrome/matugen-github.css"
+
+[templates.web_youtube]
+input_path = "~/.config/matugen/templates/websites/youtube.css.template"
+output_path = "~/.mozilla/firefox/zawmoi9h.default/chrome/matugen-youtube.css"
+
+[templates.neovim]
+input_path = "~/.config/matugen/templates/nvim-colors.lua.template"
+output_path = "~/.config/nvim/matugen_colors.lua"
+
+[templates.cava]
+input_path = "~/.config/matugen/templates/cava-colors.ini.template"
+output_path = "~/.config/cava/colors"
+
+[templates.swayosd]
+input_path = "~/.config/matugen/templates/swayosd.css.template"
+output_path = "~/.config/swayosd/style.css"
+
+[templates.swaync]
+input_path = "~/.config/matugen/templates/swaync.css.template"
+output_path = "~/.config/swaync/style.css"
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi.rasi.template"
+output_path = "~/.config/rofi/theme.rasi"
