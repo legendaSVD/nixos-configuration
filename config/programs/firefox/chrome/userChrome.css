@@ -1,0 +1,67 @@
+@import "matugen.css";
+:root {
+  --lwt-accent-color: var(--bg-base) !important;
+  --lwt-text-color: var(--text-main) !important;
+  --toolbar-bgcolor: var(--bg-base) !important;
+  --toolbar-color: var(--text-main) !important;
+  --urlbar-box-bgcolor: var(--bg-surface) !important;
+  --urlbar-box-text-color: var(--text-main) !important;
+  --urlbar-box-focus-bgcolor: var(--bg-surface-active) !important;
+  --tab-selected-bgcolor: var(--accent) !important;
+  --tab-selected-textcolor: var(--bg-base) !important;
+  --lwt-sidebar-background-color: var(--bg-surface) !important;
+  --lwt-sidebar-text-color: var(--text-main) !important;
+  --arrowpanel-background: var(--bg-surface) !important;
+  --arrowpanel-color: var(--text-main) !important;
+  --arrowpanel-border-color: var(--border-color) !important;
+  --autocomplete-popup-background: var(--bg-surface) !important;
+  --autocomplete-popup-color: var(--text-main) !important;
+}
+#TabsToolbar {
+  padding: 6px 6px 0px 6px !important;
+  background-color: var(--bg-base) !important;
+}
+.tabbrowser-tab {
+  padding: 0 4px !important;
+}
+.tab-background {
+  border-radius: 8px !important;
+  margin-bottom: 4px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  transition: background-color 0.15s ease, transform 0.15s ease !important;
+}
+.tabbrowser-tab:hover .tab-background:not([selected="true"]) {
+  background-color: var(--bg-surface-hover) !important;
+}
+.tabbrowser-tab[selected="true"] .tab-background,
+.tabbrowser-tab[selected="true"]:hover .tab-background {
+  background-color: var(--accent) !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+}
+.tabbrowser-tab[selected="true"] .tab-content {
+  color: var(--tab-selected-textcolor) !important;
+}
+.tab-line,
+.tab-context-line,
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  display: none !important;
+}
+#urlbar-background {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 10px !important;
+  background-color: var(--bg-surface) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+#urlbar[focused="true"] > #urlbar-background {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--accent) !important;
+}
+#nav-bar {
+  box-shadow: none !important;
+  border-top: none !important;
+  padding-top: 2px !important;
+  padding-bottom: 4px !important;
+}
